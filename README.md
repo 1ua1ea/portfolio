@@ -7,7 +7,7 @@
 - GitHub Pagesでホスティング
 
 ## 🖼️ ポートフォリオサイト
-▶ [公開ページはこちら](https://yourusername.github.io/portfolio/)
+▶ [公開ページはこちら](https://1ua1ea.github.io/portfolio/)
 
 ## 📁 内容
 - index.html：トップページ
