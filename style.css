@@ -1,0 +1,96 @@
+/* 全体の基本スタイル */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background-color: #e0f7fa;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #00796b;
+}
+
+header p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* セクション */
+section {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+h2 {
+  border-bottom: 2px solid #00796b;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+  color: #00796b;
+}
+
+/* 制作実績 */
+.work-item {
+  background-color: #ffffff;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.work-item img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+
+.work-item h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+.work-item ul {
+  padding-left: 1.2em;
+  margin: 0.5em 0;
+}
+
+.work-item li {
+  margin-bottom: 0.3em;
+}
+
+/* リンクボタン風 */
+.work-item a {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.4em 1em;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.work-item a:hover {
+  background-color: #004d40;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #e0f7fa;
+  color: #555;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
