@@ -1,68 +1,80 @@
-/* 全体の基本スタイル */
 body {
-  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #fff8f5;
+  color: #3d3d3d;
 }
 
 /* ヘッダー */
 header {
-  background-color: #e0f7fa;
+  background: linear-gradient(to right, #ffe9e3, #ffe1f0);
   text-align: center;
-  padding: 2em 1em;
+  padding: 3em 1em;
+  border-bottom: 1px solid #f2dcdc;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2em;
-  color: #00796b;
+  font-size: 2.5em;
+  color: #d17c7c;
+  letter-spacing: 1px;
 }
 
 header p {
-  font-size: 1em;
-  color: #555;
+  font-size: 1.1em;
+  color: #a76d7a;
+  margin-top: 0.5em;
 }
 
 /* セクション */
 section {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 0 1em;
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 0 1.5em;
 }
 
 h2 {
-  border-bottom: 2px solid #00796b;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
-  color: #00796b;
+  border-bottom: 2px solid #e49bb8;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  color: #d17c7c;
+  font-size: 1.6em;
+  position: relative;
 }
 
 /* 制作実績 */
 .work-item {
   background-color: #ffffff;
-  padding: 1em;
-  margin-bottom: 2em;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 2em;
+  margin-bottom: 2.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .work-item img {
   max-width: 100%;
-  border-radius: 4px;
-  margin-bottom: 0.5em;
+  border-radius: 8px;
+  margin-bottom: 1em;
 }
 
 .work-item h3 {
   margin-top: 0;
-  color: #444;
+  color: #4b3a3a;
+  font-size: 1.3em;
 }
 
 .work-item ul {
   padding-left: 1.2em;
-  margin: 0.5em 0;
+  margin: 0.5em 0 1em 0;
+  font-size: 0.95em;
 }
 
 .work-item li {
@@ -73,24 +85,26 @@ h2 {
 .work-item a {
   display: inline-block;
   margin-top: 0.5em;
-  padding: 0.4em 1em;
-  background-color: #00796b;
+  padding: 0.5em 1.2em;
+  background-color: #e49bb8;
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 30px;
   font-size: 0.9em;
+  transition: background-color 0.3s ease;
 }
 
 .work-item a:hover {
-  background-color: #004d40;
+  background-color: #d17c7c;
 }
 
 /* フッター */
 footer {
   text-align: center;
-  padding: 1em;
-  background-color: #e0f7fa;
-  color: #555;
+  padding: 2em;
+  background-color: #ffe9e3;
+  color: #a76d7a;
   font-size: 0.9em;
-  margin-top: 3em;
+  margin-top: 4em;
+  border-top: 1px solid #f2dcdc;
 }
