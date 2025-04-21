@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html lang="ja">
+<<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <title>ポートフォリオ</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: linear-gradient(to bottom, #f0fdfc, #ffffff);
+      transition: background-color 0.3s;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .to-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 0.7em 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -11,15 +42,15 @@
     <p>Webデザインアシスタント・コーダー志望</p>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>自己紹介</h2>
-    <p>櫻間美咲と申します。HTML/CSSを中心にWeb制作を学んでおり、実務での経験も活かしながら、シンプルで見やすいコーディングを心がけています。</p>
+    <p>と申します。HTML/CSSを中心にWeb制作を学んでおり、実務での経験も活かしながら、シンプルで見やすいコーディングを心がけています。</p>
   </section>
 
   <section id="works">
     <h2>制作実績</h2>
 
-    <div class="work-item">
+    <div class="work-item fade-in">
       <h3>大塚商会 製品紹介サイト</h3>
       <img src="images/otsuka-shokai.png" alt="コーポレートサイト" width="300">
       <ul>
@@ -31,7 +62,7 @@
       <a href="https://www.otsuka-shokai.co.jp/products/">▶ サイトを見る</a>
     </div>
 
-    <div class="work-item">
+    <div class="work-item fade-in">
       <h3>CADJapan（キャドジャパン）</h3>
       <img src="images/cadjapan.png" alt="CADJapan" width="300">
       <ul>
@@ -43,7 +74,7 @@
       <a href="https://www.cadjapan.com/">▶ サイトを見る</a>
     </div>
 
-    <div class="work-item">
+    <div class="work-item fade-in">
       <h3>ERPナビ</h3>
       <img src="images/erpnavi.png" alt="ERPnavi" width="300">
       <ul>
@@ -55,8 +86,8 @@
       <a href="https://www.otsuka-shokai.co.jp/erpnavi/?oiid=en;top_logo">▶ サイトを見る</a>
     </div>
 
-    <div class="work-item">
-      <h3>DMMチャットブーストCV（エン・ジャパン、ビズリーチ、楽天銀行など）</h3>
+    <div class="work-item fade-in">
+      <h3>DMMチャットブーストCV</h3>
       <img src="images/chatboost.png" alt="チャットブーストCV" width="300">
       <ul>
         <li>使用技術：YAML</li>
@@ -72,5 +103,7 @@
   <footer>
     <p>© 2025 1ua1ea. All rights reserved.</p>
   </footer>
+
+  <button class="to-top-btn" id="toTop">↑</button>
 </body>
 </html>
